@@ -1,0 +1,14 @@
+<div class="header">
+  <div>
+    COMP3133 Assignment 2
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/list">Listings</a></li>
+      <li *ngIf="!loggedIn"><a routerLink="/login">Login</a></li>
+      <li *ngIf="loggedIn"><a (click)="logout()">Logout</a></li>
+      <li *ngIf="!loggedIn"><a routerLink="/signup">Sign Up</a></li>
+      <li *ngIf="loggedIn"><a routerLink="/history">Booking</a></li>
+    </ul>
+  </nav>
+</div>
